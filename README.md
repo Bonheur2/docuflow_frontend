@@ -73,3 +73,33 @@ npm install
 # Run the app
 npm run dev
 
+🛡️ Authentication
+LDAP is used for secure login. Users are assigned roles (e.g., Submitter, Reviewer, Approver) based on their LDAP groups.
+
+📨 Workflow & Notifications
+On any state change (submit, approve, reject), events are published to an Apache Pulsar topic. These can be consumed to trigger:
+
+Email notifications
+
+Dashboard alerts
+
+Audit logs
+
+📌 Roadmap
+ Add role-based UI restrictions
+
+ Improve document search functionality
+
+ Implement real-time notifications via WebSockets
+
+ Add unit/integration tests
+
+🤝 Contributing
+Contributions are welcome! Please fork the repo and open a pull request.
+
+📄 License
+MIT
+
+👨‍💻 Author
+Bonheur2 
+
